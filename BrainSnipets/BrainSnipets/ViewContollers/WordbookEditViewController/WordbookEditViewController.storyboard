@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="foO-nu-GuO">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wordbook Edit View Controller-->
+        <scene sceneID="pNz-bD-y0b">
+            <objects>
+                <viewController storyboardIdentifier="WordbookEditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="foO-nu-GuO" customClass="WordbookEditViewController" customModule="BrainSnipets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="emX-ha-bnk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6z-zA-hba">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GeL-2A-i22"/>
+                                </constraints>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.40000000000000002" green="0.33725490200000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="BMQ-o4-HtS">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" style="plain" id="cai-tB-emR">
+                                            <color key="tintColor" red="0.40000000000000002" green="0.33725490200000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="tappedBack:" destination="foO-nu-GuO" id="bz8-Vm-5E3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIq-Co-CgX">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.83921568629999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ElI-Bk-Cfu" firstAttribute="trailing" secondItem="dIq-Co-CgX" secondAttribute="trailing" id="5Q7-P3-RG1"/>
+                            <constraint firstItem="r6z-zA-hba" firstAttribute="leading" secondItem="ElI-Bk-Cfu" secondAttribute="leading" id="JDp-MF-Dn1"/>
+                            <constraint firstItem="r6z-zA-hba" firstAttribute="trailing" secondItem="ElI-Bk-Cfu" secondAttribute="trailing" id="a9l-qE-d3i"/>
+                            <constraint firstItem="r6z-zA-hba" firstAttribute="top" secondItem="ElI-Bk-Cfu" secondAttribute="top" id="buP-av-JkW"/>
+                            <constraint firstAttribute="bottom" secondItem="dIq-Co-CgX" secondAttribute="bottom" id="iK1-1M-kKn"/>
+                            <constraint firstItem="dIq-Co-CgX" firstAttribute="top" secondItem="r6z-zA-hba" secondAttribute="bottom" id="nxz-Iq-YJg"/>
+                            <constraint firstItem="dIq-Co-CgX" firstAttribute="leading" secondItem="ElI-Bk-Cfu" secondAttribute="leading" id="qFl-Ht-B2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ElI-Bk-Cfu"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="r6z-zA-hba" id="h13-dp-Lv1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gh2-WP-Xo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="22" height="22"/>
+    </resources>
+</document>

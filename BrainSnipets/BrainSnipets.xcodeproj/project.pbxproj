@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		69B8185F2301127000FA8B14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8185E2301127000FA8B14 /* AppDelegate.swift */; };
-		69B818612301127000FA8B14 /* SelectWordbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B818602301127000FA8B14 /* SelectWordbookViewController.swift */; };
-		69B818642301127000FA8B14 /* SelectWordbookViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B818622301127000FA8B14 /* SelectWordbookViewController.storyboard */; };
+		69B818612301127000FA8B14 /* WordbooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B818602301127000FA8B14 /* WordbooksViewController.swift */; };
+		69B818642301127000FA8B14 /* WordbooksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B818622301127000FA8B14 /* WordbooksViewController.storyboard */; };
 		69B818662301127200FA8B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B818652301127200FA8B14 /* Assets.xcassets */; };
 		69B818692301127200FA8B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B818672301127200FA8B14 /* LaunchScreen.storyboard */; };
 		69B818742301127200FA8B14 /* BrainSnipetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B818732301127200FA8B14 /* BrainSnipetsTests.swift */; };
@@ -30,6 +30,11 @@
 		69B818C12301BD8000FA8B14 /* menu_x66.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B818BE2301BD8000FA8B14 /* menu_x66.png */; };
 		69B818C42301BFFA00FA8B14 /* menu_x22.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B818C32301BFFA00FA8B14 /* menu_x22.png */; };
 		69D374EC2303A0350095B798 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 69D374EB2303A0350095B798 /* star.pdf */; };
+		69D374F6230448D40095B798 /* WordbookEditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D374F5230448D40095B798 /* WordbookEditViewController.storyboard */; };
+		69D374F9230449190095B798 /* WordbookEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D374F8230449190095B798 /* WordbookEditViewController.swift */; };
+		69D374FD23044F070095B798 /* back_x44.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D374FA23044F070095B798 /* back_x44.png */; };
+		69D374FE23044F070095B798 /* back_x66.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D374FB23044F070095B798 /* back_x66.png */; };
+		69D374FF23044F070095B798 /* back_x22.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D374FC23044F070095B798 /* back_x22.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +57,8 @@
 /* Begin PBXFileReference section */
 		69B8185B2301127000FA8B14 /* BrainSnipets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainSnipets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B8185E2301127000FA8B14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69B818602301127000FA8B14 /* SelectWordbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWordbookViewController.swift; sourceTree = "<group>"; };
-		69B818632301127000FA8B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectWordbookViewController.storyboard; sourceTree = "<group>"; };
+		69B818602301127000FA8B14 /* WordbooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbooksViewController.swift; sourceTree = "<group>"; };
+		69B818632301127000FA8B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WordbooksViewController.storyboard; sourceTree = "<group>"; };
 		69B818652301127200FA8B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B818682301127200FA8B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69B8186A2301127200FA8B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +84,11 @@
 		69B818BE2301BD8000FA8B14 /* menu_x66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_x66.png; sourceTree = "<group>"; };
 		69B818C32301BFFA00FA8B14 /* menu_x22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_x22.png; sourceTree = "<group>"; };
 		69D374EB2303A0350095B798 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
+		69D374F5230448D40095B798 /* WordbookEditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WordbookEditViewController.storyboard; sourceTree = "<group>"; };
+		69D374F8230449190095B798 /* WordbookEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbookEditViewController.swift; sourceTree = "<group>"; };
+		69D374FA23044F070095B798 /* back_x44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_x44.png; sourceTree = "<group>"; };
+		69D374FB23044F070095B798 /* back_x66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_x66.png; sourceTree = "<group>"; };
+		69D374FC23044F070095B798 /* back_x22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_x22.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +191,9 @@
 				69B818BD2301BD8000FA8B14 /* menu_x44.png */,
 				69B818BE2301BD8000FA8B14 /* menu_x66.png */,
 				69D374EB2303A0350095B798 /* star.pdf */,
+				69D374FC23044F070095B798 /* back_x22.png */,
+				69D374FA23044F070095B798 /* back_x44.png */,
+				69D374FB23044F070095B798 /* back_x66.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -188,18 +201,19 @@
 		69B818AA23012E1500FA8B14 /* ViewContollers */ = {
 			isa = PBXGroup;
 			children = (
-				69B818AB23012E2E00FA8B14 /* SelectWordbookViewController */,
+				69D374F7230448EC0095B798 /* WordbookEditViewController */,
+				69B818AB23012E2E00FA8B14 /* WordbooksViewController */,
 			);
 			path = ViewContollers;
 			sourceTree = "<group>";
 		};
-		69B818AB23012E2E00FA8B14 /* SelectWordbookViewController */ = {
+		69B818AB23012E2E00FA8B14 /* WordbooksViewController */ = {
 			isa = PBXGroup;
 			children = (
-				69B818602301127000FA8B14 /* SelectWordbookViewController.swift */,
-				69B818622301127000FA8B14 /* SelectWordbookViewController.storyboard */,
+				69B818602301127000FA8B14 /* WordbooksViewController.swift */,
+				69B818622301127000FA8B14 /* WordbooksViewController.storyboard */,
 			);
-			path = SelectWordbookViewController;
+			path = WordbooksViewController;
 			sourceTree = "<group>";
 		};
 		69B818AD23012E7500FA8B14 /* Utils */ = {
@@ -211,6 +225,15 @@
 				69B818AE23012EA500FA8B14 /* UINavigationBarExtension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		69D374F7230448EC0095B798 /* WordbookEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69D374F8230449190095B798 /* WordbookEditViewController.swift */,
+				69D374F5230448D40095B798 /* WordbookEditViewController.storyboard */,
+			);
+			path = WordbookEditViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,13 +341,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B818692301127200FA8B14 /* LaunchScreen.storyboard in Resources */,
+				69D374FE23044F070095B798 /* back_x66.png in Resources */,
+				69D374FF23044F070095B798 /* back_x22.png in Resources */,
 				69B818662301127200FA8B14 /* Assets.xcassets in Resources */,
 				69B818C42301BFFA00FA8B14 /* menu_x22.png in Resources */,
-				69B818642301127000FA8B14 /* SelectWordbookViewController.storyboard in Resources */,
+				69B818642301127000FA8B14 /* WordbooksViewController.storyboard in Resources */,
+				69D374FD23044F070095B798 /* back_x44.png in Resources */,
 				69B818A82301237A00FA8B14 /* app_x120.png in Resources */,
 				69B818A92301237A00FA8B14 /* app_x1024.png in Resources */,
 				69B818A32301237A00FA8B14 /* app_x87.png in Resources */,
 				69B818A22301237A00FA8B14 /* app_x40.png in Resources */,
+				69D374F6230448D40095B798 /* WordbookEditViewController.storyboard in Resources */,
 				69B818A62301237A00FA8B14 /* app_x180.png in Resources */,
 				69B818C02301BD8000FA8B14 /* menu_x44.png in Resources */,
 				69B818C12301BD8000FA8B14 /* menu_x66.png in Resources */,
@@ -358,7 +385,8 @@
 			files = (
 				69B818B8230145F000FA8B14 /* UIApplicationExtension.swift in Sources */,
 				69B818AF23012EA500FA8B14 /* UINavigationBarExtension.swift in Sources */,
-				69B818612301127000FA8B14 /* SelectWordbookViewController.swift in Sources */,
+				69D374F9230449190095B798 /* WordbookEditViewController.swift in Sources */,
+				69B818612301127000FA8B14 /* WordbooksViewController.swift in Sources */,
 				69B818B323013D4900FA8B14 /* Constant.swift in Sources */,
 				69B8185F2301127000FA8B14 /* AppDelegate.swift in Sources */,
 				69B818B123013C4400FA8B14 /* UIColorExtension.swift in Sources */,
@@ -397,12 +425,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		69B818622301127000FA8B14 /* SelectWordbookViewController.storyboard */ = {
+		69B818622301127000FA8B14 /* WordbooksViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				69B818632301127000FA8B14 /* Base */,
 			);
-			name = SelectWordbookViewController.storyboard;
+			name = WordbooksViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		69B818672301127200FA8B14 /* LaunchScreen.storyboard */ = {

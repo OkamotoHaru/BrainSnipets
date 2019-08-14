@@ -1,5 +1,5 @@
 //
-//  SelectWordbookViewController.swift
+//  WordbooksViewController.swift
 //  BrainSnipets
 //
 //  Created by masato on 2019/08/12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectWordbookViewController: UIViewController {
+class WordbooksViewController: UIViewController {
 
     // MARK: ********** 接続 **********
     
@@ -21,13 +21,6 @@ class SelectWordbookViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
-    }
-    
-    /// 画面が表示されそうになった際に呼ばれます
-    ///
-    /// - Parameter animated: アニメするか
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         // ナビゲーションバー
         setNavigationBarLayout()
         // 単語帳作成
@@ -36,20 +29,23 @@ class SelectWordbookViewController: UIViewController {
         }
     }
     
+    /// 画面が表示されそうになった際に呼ばれます
+    ///
+    /// - Parameter animated: アニメするか
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     // MARK: ********** ナビゲーションバー **********
     
     /// ナビゲーションバー
     @IBOutlet weak var navigationBar: UINavigationBar!
     
-    
     /// ナビゲーションバーのレイアウトを設定します
     private func setNavigationBarLayout() {
-        // 透過許可
-        navigationBar.isTranslucent = true
         // 影もいるので空画像設定
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
-        
     }
     
     /// ナビゲーションバーのメニューアイコンをタップした際に呼ばれます
@@ -183,6 +179,10 @@ class SelectWordbookViewController: UIViewController {
     /// 単語帳のメニューをタップした際に呼ばれます
     @objc func tappedWordbookMenu(){
         print("tappedWordbookMenu()")
+        // 遷移
+        let storyboard = UIStoryboard(name: "WordbookEditViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "WordbookEditViewController")
+        present(vc, animated: true, completion: {})
     }
     
     // MARK: ********** アラートコントローラー **********
