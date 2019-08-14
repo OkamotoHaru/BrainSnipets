@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Wordbook View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SelectWordbookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SelectWordbookViewController" customModule="BrainSnipets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ase-IJ-dMx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.40000000000000002" green="0.33725490196078434" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="単語帳リスト" id="zm0-1e-nU8">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="menu" id="lZa-lc-h21">
+                                            <color key="tintColor" red="0.40000000000000002" green="0.33725490196078434" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="tappedMenu:" destination="BYZ-38-t0r" id="pNa-db-UYq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-4S-WTA">
+                                <rect key="frame" x="8" y="84" width="359" height="575"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWg-eN-ae1" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="575"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fWg-eN-ae1" firstAttribute="leading" secondItem="Hem-4S-WTA" secondAttribute="leading" id="0p7-zR-BxC"/>
+                                    <constraint firstItem="fWg-eN-ae1" firstAttribute="top" secondItem="Hem-4S-WTA" secondAttribute="top" id="6rh-h3-FLw"/>
+                                    <constraint firstItem="fWg-eN-ae1" firstAttribute="centerX" secondItem="Hem-4S-WTA" secondAttribute="centerX" id="BoX-BH-GWU"/>
+                                    <constraint firstItem="fWg-eN-ae1" firstAttribute="centerY" secondItem="Hem-4S-WTA" secondAttribute="centerY" id="Ehz-LO-AEY"/>
+                                    <constraint firstAttribute="trailing" secondItem="fWg-eN-ae1" secondAttribute="trailing" id="Gzr-37-hkI"/>
+                                    <constraint firstAttribute="bottom" secondItem="fWg-eN-ae1" secondAttribute="bottom" id="KGz-Th-3yg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6470588235294118" green="0.83921568627450982" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hem-4S-WTA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="3aK-L9-dJ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hem-4S-WTA" secondAttribute="bottom" constant="8" id="5qh-pR-BLV"/>
+                            <constraint firstItem="ase-IJ-dMx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8SS-YV-OF0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hem-4S-WTA" secondAttribute="trailing" constant="8" id="D01-YR-5Uu"/>
+                            <constraint firstItem="ase-IJ-dMx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F4x-vg-Ggb"/>
+                            <constraint firstItem="ase-IJ-dMx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tug-kg-42W"/>
+                            <constraint firstItem="Hem-4S-WTA" firstAttribute="top" secondItem="ase-IJ-dMx" secondAttribute="bottom" constant="20" id="xee-Ys-mCi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="ase-IJ-dMx" id="sLL-LS-h5l"/>
+                        <outlet property="scrollView" destination="Hem-4S-WTA" id="Isu-lN-SIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="22" height="22"/>
+    </resources>
+</document>
