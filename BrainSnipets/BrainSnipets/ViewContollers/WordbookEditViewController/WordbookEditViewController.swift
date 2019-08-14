@@ -17,6 +17,8 @@ class WordbookEditViewController: UIViewController {
         super.viewDidLoad()
         // ナビゲーションバーレイアウト設定
         setNavigtationBarLayout()
+        // 削除ボタンレイアウト設定
+        setDeleteButtonLayout()
     }
     
     // MARK: ********** ナビゲーションバー **********
@@ -26,7 +28,7 @@ class WordbookEditViewController: UIViewController {
     
     /// ナビゲーションバーのレイアウトを設定します
     private func setNavigtationBarLayout() {
-        navigationBar.setTitle("英検２級")
+        navigationBar.setTitle("単語帳編集")
         // 影もいるので空画像設定
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
@@ -39,4 +41,14 @@ class WordbookEditViewController: UIViewController {
         self.dismiss(animated: true, completion: {})
     }
     
+    // MARK: ********** 削除ボタン **********
+    
+    /// 削除ボタン
+    @IBOutlet weak var deleteButton: UIButton!
+    
+    /// 削除ボタンのレイアウトを設定します
+    private func setDeleteButtonLayout() {
+        // 角丸
+        deleteButton.layer.cornerRadius = deleteButton.frame.height/8
+    }
 }
