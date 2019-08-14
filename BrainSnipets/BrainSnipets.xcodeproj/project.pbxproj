@@ -30,8 +30,6 @@
 		69B818C12301BD8000FA8B14 /* menu_x66.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B818BE2301BD8000FA8B14 /* menu_x66.png */; };
 		69B818C42301BFFA00FA8B14 /* menu_x22.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B818C32301BFFA00FA8B14 /* menu_x22.png */; };
 		69D374EC2303A0350095B798 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 69D374EB2303A0350095B798 /* star.pdf */; };
-		69D374F12303E7EA0095B798 /* WordbookMenuDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D374F02303E7EA0095B798 /* WordbookMenuDialog.storyboard */; };
-		69D374F42303E83E0095B798 /* WordbookMenuDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D374F32303E83E0095B798 /* WordbookMenuDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +79,6 @@
 		69B818BE2301BD8000FA8B14 /* menu_x66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_x66.png; sourceTree = "<group>"; };
 		69B818C32301BFFA00FA8B14 /* menu_x22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_x22.png; sourceTree = "<group>"; };
 		69D374EB2303A0350095B798 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
-		69D374F02303E7EA0095B798 /* WordbookMenuDialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WordbookMenuDialog.storyboard; sourceTree = "<group>"; };
-		69D374F32303E83E0095B798 /* WordbookMenuDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbookMenuDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +188,6 @@
 		69B818AA23012E1500FA8B14 /* ViewContollers */ = {
 			isa = PBXGroup;
 			children = (
-				69D374F22303E7F40095B798 /* WordbookMenuDialog */,
 				69B818AB23012E2E00FA8B14 /* SelectWordbookViewController */,
 			);
 			path = ViewContollers;
@@ -216,15 +211,6 @@
 				69B818AE23012EA500FA8B14 /* UINavigationBarExtension.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		69D374F22303E7F40095B798 /* WordbookMenuDialog */ = {
-			isa = PBXGroup;
-			children = (
-				69D374F02303E7EA0095B798 /* WordbookMenuDialog.storyboard */,
-				69D374F32303E83E0095B798 /* WordbookMenuDialog.swift */,
-			);
-			path = WordbookMenuDialog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D374F12303E7EA0095B798 /* WordbookMenuDialog.storyboard in Resources */,
 				69B818692301127200FA8B14 /* LaunchScreen.storyboard in Resources */,
 				69B818662301127200FA8B14 /* Assets.xcassets in Resources */,
 				69B818C42301BFFA00FA8B14 /* menu_x22.png in Resources */,
@@ -372,7 +357,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B818B8230145F000FA8B14 /* UIApplicationExtension.swift in Sources */,
-				69D374F42303E83E0095B798 /* WordbookMenuDialog.swift in Sources */,
 				69B818AF23012EA500FA8B14 /* UINavigationBarExtension.swift in Sources */,
 				69B818612301127000FA8B14 /* SelectWordbookViewController.swift in Sources */,
 				69B818B323013D4900FA8B14 /* Constant.swift in Sources */,

@@ -8,16 +8,12 @@
 
 import UIKit
 
-class SelectWordbookViewController: UIViewController,UINavigationBarDelegate {
+class SelectWordbookViewController: UIViewController {
 
     // MARK: ********** 接続 **********
     
-    /// ナビゲーションバー
-    @IBOutlet weak var navigationBar: UINavigationBar!
     /// スクロールビュー
     @IBOutlet weak var scrollView: UIScrollView!
-    /// 単語帳リスト
-    var wordbooks: [UIView] = []
     
     // MARK: ********** ライフサイクル **********
     
@@ -32,32 +28,42 @@ class SelectWordbookViewController: UIViewController,UINavigationBarDelegate {
     /// - Parameter animated: アニメするか
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // ステータスバー
-        setStatusBarLayout()
+        // ナビゲーションバー
+        setNavigationBarLayout()
         // 単語帳作成
         for _ in 0..<2 {
             makeWordbook()
         }
     }
     
-    // MARK: ********** ステータスバー **********
-    
-    /// ステータスバーのレイアウトを設定
-    func setStatusBarLayout() {
-        // ステータスバーの色
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor(hex: NavigationColor)
-    }
-    
     // MARK: ********** ナビゲーションバー **********
+    
+    /// ナビゲーションバー
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
+    
+    /// ナビゲーションバーのレイアウトを設定します
+    private func setNavigationBarLayout() {
+        // 透過許可
+        navigationBar.isTranslucent = true
+        // 影もいるので空画像設定
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        
+    }
     
     /// ナビゲーションバーのメニューアイコンをタップした際に呼ばれます
     ///
     /// - Parameter sender: UIBarButtonItem
     @IBAction func tappedMenu(_ sender: Any) {
         print("tappedMenu")
+        makeAletDialog()
     }
     
     // MARK: ********** 単語帳 **********
+    
+    /// 単語帳リスト
+    private var wordbooks: [UIView] = []
     
     /// 単語帳の高さ
     private var WordbookHeight: CGFloat = 60.0
@@ -85,7 +91,6 @@ class SelectWordbookViewController: UIViewController,UINavigationBarDelegate {
         // 制約有効
         book.translatesAutoresizingMaskIntoConstraints = false
         // タッチ判定追加
-        //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedWordbook(_:)))
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedWordbook(_:)))
         book.addGestureRecognizer(tapGesture)
         // 追加
@@ -178,5 +183,31 @@ class SelectWordbookViewController: UIViewController,UINavigationBarDelegate {
     /// 単語帳のメニューをタップした際に呼ばれます
     @objc func tappedWordbookMenu(){
         print("tappedWordbookMenu()")
+    }
+    
+    // MARK: ********** アラートコントローラー **********
+    
+    /// アラートコントローラー
+    private var alertController: UIAlertController = UIAlertController()
+    
+    /// アラートコントローラーを生成します
+    private func makeAletDialog() {
+        // 生成
+        alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        // アクション設定
+        var action = UIAlertAction(title: "新規作成", style: .default, handler: { _ in
+            print("新規作成")
+        })
+        alertController.addAction(action)
+        action = UIAlertAction(title: "一括削除", style: .default, handler: { _ in
+            print("一括削除")
+        })
+        alertController.addAction(action)
+        action = UIAlertAction(title: "キャンセル", style: .cancel, handler: { _ in
+            print("キャンセル")
+        })
+        alertController.addAction(action)
+        // 表示
+        self .present(alertController, animated: true, completion: {})
     }
 }
