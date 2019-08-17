@@ -51,4 +51,11 @@ class WordbookEditViewController: UIViewController {
         // 角丸
         deleteButton.layer.cornerRadius = deleteButton.frame.height/8
     }
+    
+    /// 削除ボタンをタップした際に呼ばれます
+    ///
+    /// - Parameter sender: ボタン
+    @IBAction func tappedDelete(_ sender: Any) {
+        print("tappedDelete")
+    }
 }

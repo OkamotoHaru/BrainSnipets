@@ -1,5 +1,5 @@
 //
-//  WordbooksViewController.swift
+//  WordbookListViewController.swift
 //  BrainSnipets
 //
 //  Created by masato on 2019/08/12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WordbooksViewController: UIViewController {
+class WordbookListViewController: UIViewController {
 
     // MARK: ********** 接続 **********
     
@@ -60,7 +60,6 @@ class WordbooksViewController: UIViewController {
     
     /// 単語帳リスト
     private var wordbooks: [UIView] = []
-    
     /// 単語帳の高さ
     private var WordbookHeight: CGFloat = 60.0
     
@@ -174,14 +173,16 @@ class WordbooksViewController: UIViewController {
             return;
         }
         print("tappedWordbook() tag:\(book.tag)")
+        // 遷移
+        let vc = UIViewController.getViewController(storyboardName: "WordbookViewController")
+        present(vc, animated: true, completion: {})
     }
     
     /// 単語帳のメニューをタップした際に呼ばれます
     @objc func tappedWordbookMenu(){
         print("tappedWordbookMenu()")
         // 遷移
-        let storyboard = UIStoryboard(name: "WordbookEditViewController", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "WordbookEditViewController")
+        let vc = UIViewController.getViewController(storyboardName: "WordbookEditViewController")
         present(vc, animated: true, completion: {})
     }
     

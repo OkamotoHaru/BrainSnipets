@@ -75,6 +75,9 @@
                                 <state key="normal" title="削除">
                                     <color key="titleColor" red="0.40000000000000002" green="0.33725490200000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedDelete:" destination="foO-nu-GuO" eventType="touchUpInside" id="aH6-NL-d3l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

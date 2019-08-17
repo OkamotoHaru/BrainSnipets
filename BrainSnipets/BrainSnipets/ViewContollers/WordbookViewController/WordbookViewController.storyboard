@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SfB-9r-xpV">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wordbook View Controller-->
+        <scene sceneID="YSM-y4-sGR">
+            <objects>
+                <viewController storyboardIdentifier="WordbookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SfB-9r-xpV" customClass="WordbookViewController" customModule="BrainSnipets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4f-1f-Ydh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdM-RQ-jTe">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xQc-AJ-4A8"/>
+                                </constraints>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.40000000000000002" green="0.33725490200000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="英検２級" id="MwS-44-Izj">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="RdM-XJ-jvw">
+                                            <color key="tintColor" red="0.40000000000000002" green="0.33725490200000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="tappedBack:" destination="SfB-9r-xpV" id="EXG-lg-j9y"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAa-0c-2UP">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.83921568629999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lg3-lY-OLE">
+                                <rect key="frame" x="8" y="103" width="359" height="618"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-d1-yBy">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="618"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HIg-d1-yBy" firstAttribute="centerY" secondItem="Lg3-lY-OLE" secondAttribute="centerY" id="Bpm-76-sSm"/>
+                                    <constraint firstItem="HIg-d1-yBy" firstAttribute="centerX" secondItem="Lg3-lY-OLE" secondAttribute="centerX" id="EQl-pD-9jZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="HIg-d1-yBy" secondAttribute="trailing" id="Glp-AO-NIV"/>
+                                    <constraint firstItem="HIg-d1-yBy" firstAttribute="leading" secondItem="Lg3-lY-OLE" secondAttribute="leading" id="ISe-TB-Fru"/>
+                                    <constraint firstAttribute="bottom" secondItem="HIg-d1-yBy" secondAttribute="bottom" id="hQT-qu-bvF"/>
+                                    <constraint firstItem="HIg-d1-yBy" firstAttribute="top" secondItem="Lg3-lY-OLE" secondAttribute="top" id="sRc-0h-oId"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5S-3b-Yrm">
+                                <rect key="frame" x="290" y="644" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.56679080310880825" green="0.42585667086116574" blue="0.37989414110938574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6Zl-iR-dJx"/>
+                                    <constraint firstAttribute="width" constant="80" id="N0E-dQ-ipR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tappedAdd:" destination="SfB-9r-xpV" eventType="touchUpInside" id="WYL-mA-anI"/>
+                                </connections>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ri-cm-ZlL">
+                                <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="SwA-yf-buf"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="単語" image="word" id="3GL-4q-bVZ"/>
+                                    <tabBarItem title="テスト" image="test" id="DFF-nM-Qks"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lg3-lY-OLE" firstAttribute="top" secondItem="NdM-RQ-jTe" secondAttribute="bottom" constant="15" id="4Jr-eE-DSG"/>
+                            <constraint firstItem="1Ri-cm-ZlL" firstAttribute="trailing" secondItem="0fC-DX-nL1" secondAttribute="trailing" id="4qG-0A-Mtc"/>
+                            <constraint firstItem="1Ri-cm-ZlL" firstAttribute="top" secondItem="F5S-3b-Yrm" secondAttribute="bottom" constant="5" id="7zc-lA-AcU"/>
+                            <constraint firstItem="Lg3-lY-OLE" firstAttribute="leading" secondItem="0fC-DX-nL1" secondAttribute="leading" constant="8" id="B5M-Gr-8av"/>
+                            <constraint firstItem="VAa-0c-2UP" firstAttribute="top" secondItem="NdM-RQ-jTe" secondAttribute="bottom" id="F7g-h3-mMR"/>
+                            <constraint firstItem="NdM-RQ-jTe" firstAttribute="top" secondItem="0fC-DX-nL1" secondAttribute="top" id="Hai-D7-trq"/>
+                            <constraint firstItem="0fC-DX-nL1" firstAttribute="trailing" secondItem="F5S-3b-Yrm" secondAttribute="trailing" constant="5" id="KHw-0P-IIc"/>
+                            <constraint firstItem="1Ri-cm-ZlL" firstAttribute="bottom" secondItem="0fC-DX-nL1" secondAttribute="bottom" id="Loy-0c-aKM"/>
+                            <constraint firstItem="NdM-RQ-jTe" firstAttribute="trailing" secondItem="0fC-DX-nL1" secondAttribute="trailing" id="Mbe-Kc-Opu"/>
+                            <constraint firstItem="1Ri-cm-ZlL" firstAttribute="top" secondItem="Lg3-lY-OLE" secondAttribute="bottom" constant="8" id="SvZ-fq-F89"/>
+                            <constraint firstItem="1Ri-cm-ZlL" firstAttribute="top" secondItem="VAa-0c-2UP" secondAttribute="bottom" id="e2k-aW-925"/>
+                            <constraint firstItem="0fC-DX-nL1" firstAttribute="trailing" secondItem="Lg3-lY-OLE" secondAttribute="trailing" constant="8" id="gYx-ei-93a"/>
+                            <constraint firstItem="VAa-0c-2UP" firstAttribute="leading" secondItem="0fC-DX-nL1" secondAttribute="leading" id="naQ-S3-Di9"/>
+                            <constraint firstItem="0fC-DX-nL1" firstAttribute="trailing" secondItem="VAa-0c-2UP" secondAttribute="trailing" id="tXK-SB-6OJ"/>
+                            <constraint firstItem="NdM-RQ-jTe" firstAttribute="leading" secondItem="0fC-DX-nL1" secondAttribute="leading" id="tc1-aR-BZL"/>
+                            <constraint firstItem="1Ri-cm-ZlL" firstAttribute="leading" secondItem="0fC-DX-nL1" secondAttribute="leading" id="uEG-bC-2L0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0fC-DX-nL1"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="NdM-RQ-jTe" id="cGi-ff-hu8"/>
+                        <outlet property="scrollView" destination="Lg3-lY-OLE" id="om9-k4-Trg"/>
+                        <outlet property="tabBar" destination="1Ri-cm-ZlL" id="yZ8-ch-Ack"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xY-mC-Sbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="22" height="22"/>
+        <image name="test" width="25" height="25"/>
+        <image name="word" width="25" height="25"/>
+    </resources>
+</document>
